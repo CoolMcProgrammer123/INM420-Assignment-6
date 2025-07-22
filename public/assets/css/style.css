@@ -88,6 +88,13 @@ body {
     border-bottom: 1px solid var(--white);
     padding: 0.4rem 0;
     font-size: 0.95rem;
+
+    /* For removing bullets in stats */
+    padding-left: 0;         /* cancel the indented space */
+}
+
+.stats li::before {
+    content: none;           /* suppress the green bullet */
 }
 
 .stats li span {
