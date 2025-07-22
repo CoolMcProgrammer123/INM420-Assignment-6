@@ -42,6 +42,7 @@ body {
     gap: 0;
     /* max-width: 1400px; */
     margin: 0 auto;
+    height: 100vh;
 }
 
 /* Added padding INSIDE each cell */
@@ -59,6 +60,22 @@ body {
     padding: 0;
 }
 
+/* gradient overlay (red, bottom-to-middle) */
+.photo-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%; /* how “tall” the fade runs—tweak if needed */
+    background: linear-gradient(
+        0deg,
+        rgba(214, 60, 52, 0.5) 0%,   /* solid red at the very bottom */
+        rgba(214, 60, 52, 0) 100%     /* fully transparent by the middle */
+    );
+    z-index: 1; /* sits between photo and caption */
+}
+
 .photo-section img {
     width: 100%;
     height: 100%;
@@ -71,6 +88,7 @@ body {
     bottom: 2rem;
     left: 2rem;
     right: 2rem;
+    z-index: 2;
 }
 
 .photo-section h2 {
@@ -181,7 +199,7 @@ ul li::before {
 }
 
 /* ---------- responsiveness ---------- */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .persona {
         grid-template-columns: 1fr;           /* single column */
         grid-template-areas:
@@ -190,12 +208,21 @@ ul li::before {
             "stats"
             "col1"
             "col2";
+        height: auto;
     }
 
     .photo-section figcaption {
         bottom: 1rem;
         left: 1rem;
         right: 1rem;
+    }
+
+    .tasks-column {
+        padding-bottom: 0;
+    }
+
+    .feelings-column {
+        padding-top: 1rem;
     }
 }
 
