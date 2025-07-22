@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ---------- Custom Edits ---------- */
+/* Font weight for header titles */
+h3 {
+    font-weight: 600;
+}
+
+
 /* ---------- variables ---------- */
 :root {
-    --navy: #122138;
-    --orange: #de9947;
-    --green: #00c853;
+    --navy: #091124;
+    --orange: #E59A35;
+    --green: #B3D233;
     --white: #ffffff;
     --font-main: "Poppins", Arial, sans-serif;
 }
