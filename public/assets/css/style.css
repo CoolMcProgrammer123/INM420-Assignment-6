@@ -6,9 +6,15 @@ h3 {
     font-weight: 600;
 }
 
+/* Separate background color */
+.about, .stats {
+    background-color: var(--lightnavy);
+}
+
 
 /* ---------- variables ---------- */
 :root {
+    --lightnavy: #122138;
     --navy: #091124;
     --orange: #E59A35;
     --green: #B3D233;
@@ -34,7 +40,7 @@ body {
 
     /* Removed Gap Between Every Cell */
     gap: 0;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
 }
 
