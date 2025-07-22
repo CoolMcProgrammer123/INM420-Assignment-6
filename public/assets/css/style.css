@@ -77,12 +77,19 @@ body {
     font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 700;
     line-height: 1;
+
+    /* Aligned Center */
+    text-align: center;
 }
 
 .photo-section p {
     font-style: italic;
     font-size: clamp(1rem, 1.8vw, 1.3rem);
-    margin-top: 0.3rem;
+
+    /* Changed to match the reference more */
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 /* ---------- top-right ABOUT ---------- */
