@@ -70,7 +70,7 @@ body {
     height: 55%; /* how “tall” the fade runs—tweak if needed */
     background: linear-gradient(
         0deg,
-        rgba(214, 60, 52, 0.5) 0%,   /* solid red at the very bottom */
+        rgba(65, 3, 0, 0.7) 0%,   /* solid red at the very bottom */
         rgba(214, 60, 52, 0) 100%     /* fully transparent by the middle */
     );
     z-index: 1; /* sits between photo and caption */
