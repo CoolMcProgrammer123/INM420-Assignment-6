@@ -31,9 +31,15 @@ body {
         "photo about stats"
         "photo col1  col2 "
         "photo col1  col2 ";
-    gap: 2rem;
+
+    /* Removed Gap Between Every Cell */
+    gap: 0;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+/* Added padding INSIDE each cell */
+.persona > * {
     padding: 2rem;
 }
 
@@ -42,6 +48,9 @@ body {
     grid-area: photo;
     position: relative;
     overflow: hidden;
+    
+    /* Removed padding for photo */
+    padding: 0;
 }
 
 .photo-section img {
